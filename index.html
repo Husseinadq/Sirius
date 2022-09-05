@@ -304,7 +304,59 @@
     </section>
 
     <!-- contact form -->
-    
+    <section class="contact">
+        <div class="container-lg">
+            <div class="text-center">
+                <h2>Get in Touch</h2>
+                <p class="lead">Questions to ask? Fill out the form to contact me directly...</p>
+            </div>
+
+            <div class="row justify-content-center my-5">
+
+                <div class="col-lg-6">
+                    <form >
+                        <label for="email" class="form-label">Email address:</label>
+                        <div class="mb-4 input-group">
+                            <span class="input-group-text">
+                                <i class="bi bi-envelope-fill"></i>
+                            </span>
+                            <input type="email" name="" id="email" class="form-control" placeholder="e.g.mario@example.com"> 
+                        </div>
+                   
+                        <label for="name" class="form-label">Name:</label>
+                        <div class="mab-4 input-group">
+                            <span class="input-group-text">
+                                <i class="bi bi-person-fill"></i>
+                            </span>
+                            <input type="text" class="form-control" name="" id="name"placeholder="e.g.Mario">
+                        </div>
+
+                        <label for="subject" class="form-label">What is your question about?</label>
+                        <div class="mab-4 input-group">
+                            <span class="input-group-text">
+                                <i class="bi bi-chat-left-dots-fill"></i>                            </span>
+                            <select  id="subject" class="form-select">
+                                <option value="pricing" selected> Pricing query</option>
+                                <option value="content">Content query</option>
+                                <option value="other">Other query</option>
+                            </select>
+                        </div>
+                       
+
+                        <div class="form-floating mb-4 mt-5">
+                            <textarea  id="query"  class="form-control" style="height: 140px;"></textarea>
+                            <label for="query" >Your query...</label>
+                        </div>
+                         
+                        <div class="mb-4 text-center">
+                            <button type="submit" class="btn btn-secondary">Submit  </button>
+                        </div>
+                        
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
 
 
     <!-- JavaScript Bundle with Popper -->
