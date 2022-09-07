@@ -73,7 +73,10 @@
                     <a href="#pricing" class="btn btn-secondary btn-lg">Buy Now</a>
                 </div>
                 <div class="col-md-5 text-center d-none d-md-block">
-                    <img class="img-fluid" src="/img/ebook-cover.png" alt="ebook cover">
+                     <!-- tooltip --> 
+                    <span class="toolt" data-bs-placement="bottom" title="Net Ninga Book Cover">
+                        <img class="img-fluid" src="/img/ebook-cover.png" alt="ebook cover">
+                    </span>
                 </div> 
             </div>
         </div>
@@ -316,13 +319,15 @@
                 <div class="col-lg-6">
                     <form >
                         <label for="email" class="form-label">Email address:</label>
-                        <div class="mb-4 input-group">
-                            <span class="input-group-text">
-                                <i class="bi bi-envelope-fill"></i>
-                            </span>
-                            <input type="email" name="" id="email" class="form-control" placeholder="e.g.mario@example.com"> 
-                        </div>
-                   
+                        <!--Tooltip-->
+                        <span class="toolt" data-bs-parent="bottom" title="Enter Your Email">
+                            <div class="mb-4 input-group">
+                                <span class="input-group-text">
+                                    <i class="bi bi-envelope-fill"></i>
+                                </span>
+                                <input type="email" name="" id="email" class="form-control" placeholder="e.g.mario@example.com"> 
+                            </div>
+                        </span>
                         <label for="name" class="form-label">Name:</label>
                         <div class="mab-4 input-group">
                             <span class="input-group-text">
@@ -334,7 +339,8 @@
                         <label for="subject" class="form-label">What is your question about?</label>
                         <div class="mab-4 input-group">
                             <span class="input-group-text">
-                                <i class="bi bi-chat-left-dots-fill"></i>                            </span>
+                                <i class="bi bi-chat-left-dots-fill"></i> 
+                           </span>
                             <select  id="subject" class="form-select">
                                 <option value="pricing" selected> Pricing query</option>
                                 <option value="content">Content query</option>
@@ -363,5 +369,12 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" 
     integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" 
     crossorigin="anonymous"></script>
+
+    <script>
+        const tooltip=document.querySelectorAll('.toolt')
+        tooltip.forEach(t=>{ new bootstrap.Tooltip(t)
+        })
+    </script>
+
 </body>
 </html>
